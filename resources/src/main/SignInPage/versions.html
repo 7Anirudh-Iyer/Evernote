@@ -1,0 +1,214 @@
+<!-- v1 -->
+
+<html>
+  <head>
+    <title>Sign In</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="firebase-app.js"></script>
+    <script src="firebase-database.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyCNePrUJkKixB2bMhPvfHpDabmUcspKQzc",
+        authDomain: "evernote-cc43d.firebaseapp.com",
+        databaseURL: "https://evernote-cc43d-default-rtdb.firebaseio.com",
+        projectId: "evernote-cc43d",
+        storageBucket: "evernote-cc43d.appspot.com",
+        messagingSenderId: "208113243232",
+        appId: "1:208113243232:web:2d56f53e23be0c5adc1f05"
+      };
+      
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  	<style>
+  		html, body {
+		  margin: 0;
+		  padding: 0;
+		}
+		#signInBox {
+		  background-color: azure;
+		  width: 70%;
+		  height: 70%;
+		  margin-left: 15%;
+		  margin-top: 6%;
+		  box-shadow: 2px 2px 3px #333329;
+		  border-color: white;
+		  border-radius: 10px;
+		}
+		#right-edge{
+		  width: 0;
+		  height: 0;
+		  border-left: 200px solid blue;
+		  border-bottom: 150px solid transparent;
+		}
+		#left-edge{
+		  width: 0;
+		  height: 0;
+		  border-right: 200px solid blue;
+		  border-top: 150px solid transparent;
+		  margin-left: 77.7%;
+		  margin-top: 14.2%;
+		}
+		#welcome{
+		  position: absolute;
+		  margin-left: 27%;
+		  margin-top: -30%;
+		  text-align: center;
+		  font-family: 'Rochester';
+		}
+		#line1{
+		  width: 8%;
+		  height: 0.3%;
+		  background-color: black;
+		  margin-top: -30.5%;
+		  margin-left: 27%;
+		  position: absolute;
+		}
+		#line2{
+		  width: 8%;
+		  height: 0.3%;
+		  background-color: black;
+		  margin-top: -25%;
+		  margin-left: 32%;
+		  position: absolute;
+		}
+		.input_text{
+		  margin-left: 24%;
+		  position: absolute;
+		  width: 20%;
+		  margin-top: -20%;
+		}
+  	</style>
+    <div id="signInBox">
+      <div id="right-edge"></div>
+      <div id="left-edge"></div>
+      <div id="line1"></div>
+      <div id="line2"></div>
+      <h2 id="welcome">Welcome to Evernote<br>
+        <span style="text-align: center; font-size: 20px;">Sign in here</span>
+      </h2>
+      <input type="text" placeholder="Enter name" class="input_text">
+      <input type="text" placeholder="Enter name" class="input_text">
+    </div>
+    <script>
+    	let db = firebase.database()
+
+			signIn = (name, password)=>{
+				let userExistsInDb
+				db.ref('Users/'+name+'/userExists').on('value', (data)=>{
+					userExistsInDb = data.val()
+				})
+				if(userExistsInDb == true){
+					console.log('User already exists. Change the tab')
+				} else{
+					db.ref('Users/'+name).update({
+						name: name,
+						password: password,
+						NoOfNotes: 0,
+					})
+				}
+			}
+
+			$('.enter').click(()=>{
+				let name = $('#name').val()
+				let password = $('#password').val()
+				signIn(name, password)
+			})
+    </script>
+  </body>
+</html>
+
+<!-- this is version of script.js for creating the note boxes -->
+<script type="text/javascript">
+	let db = firebase.database()
+let uid, profile, email, name, image
+
+firebase.auth().onAuthStateChanged(user => {  
+	if(user) {
+	    uid = user.uid
+	    email = user.email
+	    newNote("The world is round", "349/39834", "flaaaargh")
+	} if(!user) {
+		location.href = '../SignInPage/signIn.html'
+	}
+})
+
+$('#so').click(()=>{
+	firebase.auth().signOut()
+})
+
+async function newNote(title, date, content){
+	let noOfNotes
+	await db.ref('Users/'+uid+'/NoOfNotes/').on('value', (data)=>{
+		noOfNotes = data.val()
+		for(let i=0; i<noOfNotes; i++){
+
+			let idOfDiv = "note"+i
+			div = document.createElement('div')
+			div.id = idOfDiv
+			document.getElementById('contentbar').appendChild(div)
+
+			$('#'+idOfDiv).css({
+				backgroundColor: "transparent",
+				borderColor: "black",
+				border: "groove",
+				width: "100%",
+				height: "10%",
+				textAlign: "center",
+				cursor: "pointer"
+			})
+
+			let idOfTitle = "title"+i
+			let tON = document.createElement('h5')
+			tON.innerHTML = title
+			tON.id = idOfTitle
+			tON.style.marginTop = "2%"
+			tON.style.fontSize = "90%"
+			tON.style.fontWeight = "bold"
+			document.getElementById(idOfDiv).appendChild(tON)
+
+			let idOfDate = "date"+i
+			let dON = document.createElement('h6')
+			dON.innerHTML = "Created on: "+date
+			dON.id = idOfDate
+			dON.style.fontSize = "90%"
+			dON.style.marginTop = "-10%"
+			document.getElementById(idOfDiv).appendChild(dON)
+
+		}
+	})
+}
+</script>
+
+<!-- this is code of script.js for showing curson position and setting caret position -->
+<script>
+	function setCaret(p) {
+	    var el = document.getElementById(p)
+	    var range = document.createRange()
+	    var sel = window.getSelection()
+	    
+	    range.setStart(el.childNodes[0], 264)
+	    range.collapse(true)
+	    
+	    sel.removeAllRanges()
+	    sel.addRange(range)
+	}
+	function showCursPos(divName){
+	    selection = document.getSelection();
+	    childOffset = selection.focusOffset;
+
+	    const range = document.createRange();
+	    eDiv = document.getElementById(divName);
+	    range.setStart(eDiv, 0);
+	    range.setEnd(selection.focusNode, childOffset);
+
+	    var sHtml = range.toString();
+	    p = sHtml.length; 
+	    cursorP = p
+	}
+</script>

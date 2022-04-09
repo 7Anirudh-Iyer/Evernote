@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>Evernote</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Rochester&family=Spirax&family=Tienne&display=swap" rel="stylesheet">
+	    <script>
+	      const firebaseConfig = {
+	        apiKey: "AIzaSyCNePrUJkKixB2bMhPvfHpDabmUcspKQzc",
+	        authDomain: "evernote-cc43d.firebaseapp.com",
+	        databaseURL: "https://evernote-cc43d-default-rtdb.firebaseio.com",
+	        projectId: "evernote-cc43d",
+	        storageBucket: "evernote-cc43d.appspot.com",
+	        messagingSenderId: "208113243232",
+	        appId: "1:208113243232:web:2d56f53e23be0c5adc1f05"
+	      };
+	      
+	      firebase.initializeApp(firebaseConfig);
+	    </script>
+	    <link rel="stylesheet" href="style.css" />
+	    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+	    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
+	    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.js"></script>
+	</head>
+	<body id="exists">
+		<div id="edits">
+			<div id="vc">
+				<img id="bold" src="Edit bar icons/format_bold.svg" class="edit-options"/>
+				<img id="italic" src="Edit bar icons/format_italic.svg" class="edit-options"/>
+				<img id="underline" src="Edit bar icons/format_underlined.svg" class="edit-options"/>
+				<img id="font_change" src="Edit bar icons/font_change.svg" class="edit-options"/>
+				<img id="font_size" src="Edit bar icons/font_size.svg" class="edit-options"/>
+				<img id="strike" src="Edit bar icons/strikethrough_s.svg" class="edit-options"/>
+				<img id="left" src="Edit bar icons/format_align_left.svg" class="edit-options"/>
+				<img id="right" src="Edit bar icons/format_align_right.svg" class="edit-options"/>
+				<img id="center" src="Edit bar icons/format_align_center.svg" class="edit-options"/>
+				<img id="bullet" src="Edit bar icons/format_list_bulleted.svg" class="edit-options"/>
+				<img id="number" src="Edit bar icons/format_list_numbered.svg" class="edit-options"/>
+			</div>
+		</div>
+		<div id="editsdark" style="display: none;">
+			<div id="vc2">
+				<img id="bold1" src="Dark mode icons/format_bold.svg" class="edit-options"/>
+				<img id="italic1" src="Dark mode icons/format_italic.svg" class="edit-options"/>
+				<img id="underline1" src="Dark mode icons/format_underlined.svg" class="edit-options"/>
+				<img id="font_change1" src="Dark mode icons/font_download.svg" class="edit-options"/>
+				<img id="font_size1" src="Dark mode icons/format_size.svg" class="edit-options"/>
+				<img id="strike1" src="Dark mode icons/strikethrough_s.svg" class="edit-options"/>
+				<img id="left1" src="Dark mode icons/format_align_left.svg" class="edit-options"/>
+				<img id="right1" src="Dark mode icons/format_align_right.svg" class="edit-options"/>
+				<img id="center1" src="Dark mode icons/format_align_center.svg" class="edit-options"/>
+				<img id="bullet1" src="Dark mode icons/format_list_bulleted.svg" class="edit-options"/>
+				<img id="number1" src="Dark mode icons/format_list_numbered.svg" class="edit-options"/>
+			</div>
+		</div>
+		<div id="optionsbar">
+			<div id="currentUse">
+				<img src="news.svg"/>
+			</div>
+			<!-- <img src="check-all.svg" class="sidebar-option"/> -->
+			<img src="browse.png" id="bro" class="sidebar-option"/>
+			<img src="dark mode.png" id="dm" class="sidebar-option"/>
+			<img src="sign out.png" id="so" class="sidebar-option"/>
+		</div>
+		<div id="optionsbardark" style="display: none;">
+			<div id="currentUseD">
+				<img src="Dark mode icons/news.svg" width="80%"/>
+			</div>
+			<!-- <img src="Dark mode icons/check-all-colour.svg" class="sidebar-option"/> -->
+			<img src="browse.png" id="bro1" class="sidebar-option"/>
+			<img src="dark mode.png" id="dm1" class="sidebar-option"/>
+			<img src="sign out.png" id="so1" class="sidebar-option"/>
+		</div>
+		<div id="hideed"></div>
+		<div id="contentbar">
+			<button id="add">+</button>
+		</div>
+		<div id="contentbardark" style="display: none; color: white">
+			<button id="add1">+</button>
+		</div>
+		<div id="editor">
+		</div>
+		<div id="editordark" style="display: none;">
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

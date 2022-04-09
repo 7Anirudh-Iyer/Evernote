@@ -1,0 +1,52 @@
+INFO 2022-04-08 19:33:13,580 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-08 19:33:44,509 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-08 19:33:46,078 Unable to open ./resources/src/main/firebase-app.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-08 19:33:46,080 Unable to open ./resources/src/main/firebase-database.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-08 19:35:36,427 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-08 19:35:41,917 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-08 19:35:41,918 Unable to open ./resources/src/main/firebase-app.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-08 19:35:41,920 Unable to open ./resources/src/main/firebase-database.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 18:44:51,076 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 18:45:22,497 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 18:45:22,785 Unable to open ./resources/src/main/firebase-app.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 18:45:22,914 Unable to open ./resources/src/main/firebase-database.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 18:49:25,250 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 18:49:34,501 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 18:49:36,747 Unable to open ./resources/src/main/firebase-app.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 18:49:36,763 Unable to open ./resources/src/main/firebase-database.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 19:02:19,650 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 19:02:38,637 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 19:02:39,747 Unable to open ./resources/src/main/firebase-app.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 19:02:39,747 Unable to open ./resources/src/main/firebase-database.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 19:49:48,586 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 19:50:03,393 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 19:53:29,308 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 19:53:33,018 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 19:54:22,334 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 19:54:26,013 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 19:57:19,493 Reloading the application... api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 19:57:21,291 Unable to open ./resources/src/main/firebase-app.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 19:57:21,491 Unable to open ./resources/src/main/firebase-database.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 20:00:48,390 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:00:55,918 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 20:03:11,002 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:03:16,677 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 20:05:05,611 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:05:10,616 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:05:11,790 Unable to open ./resources/src/main/firebase-app.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:05:11,790 Unable to open ./resources/src/main/firebase-database.js.map api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 20:06:51,039 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:06:54,656 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 20:07:08,067 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:07:11,821 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 20:07:40,229 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:07:43,561 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 20:08:00,749 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:08:04,537 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 20:09:35,174 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:09:39,101 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 20:09:54,455 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 20:10:14,080 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:10:17,841 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ
+INFO 2022-04-09 20:10:43,747 Auth info was exported to ./.tmp/auth_info.json api/debug/debug.cpp:14 aniru@LAPTOP-NOFTD1MJ
+ERROR 2022-04-09 20:10:47,475 Unable to open ./resources/favicon.ico api/debug/debug.cpp:16 aniru@LAPTOP-NOFTD1MJ

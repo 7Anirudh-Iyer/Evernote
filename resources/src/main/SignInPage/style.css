@@ -1,0 +1,80 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+#signInBox {
+  background-color: azure;
+  width: 70%;
+  height: 70%;
+  margin-left: 15%;
+  box-shadow: 2px 2px 3px #333329;
+  border-color: white;
+  border-radius: 10px;
+  margin-top: -6%;
+  z-index: 1;
+}
+#right-edge{
+  width: 0;
+  height: 0;
+  border-left: 200px solid red;
+  border-bottom: 150px solid transparent;
+  z-index: -1;
+}
+#left-edge{
+  width: 0;
+  height: 0;
+  border-right: 200px solid red;
+  border-top: 150px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+#welcome{
+  position: absolute;
+  margin-left: 27%;
+  margin-top: 4%;
+  text-align: center;
+  font-family: 'Rochester';
+}
+#line1{
+  width: 8%;
+  height: 0.3%;
+  background-color: black;
+  margin-top: 3.5%;
+  margin-left: 27%;
+  position: absolute;
+}
+#line2{
+  width: 8%;
+  height: 0.3%;
+  background-color: black;
+  margin-top: 9%;
+  margin-left: 32%;
+  position: absolute;
+}
+.input_text{
+  margin-left: 24%;
+  position: absolute;
+  width: 20%;
+  margin-top: 12%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: azure;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  font-family: 'tienne'
+}
+.enter{
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 100%;
+  margin-top: 40%;
+  width: 11%;
+  height: 6%;
+  cursor: pointer;
+  font-family: 'spirax';
+}
